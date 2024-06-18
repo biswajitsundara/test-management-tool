@@ -1,1 +1,105 @@
-{"1":{"name":"Priyanka","age":30,"email":"bis@example.com"},"2":{"name":"Alice","age":25,"email":"alice@example.com"}}
+{
+    "1": {
+      "id": 1,
+      "test_summary": "Verify user registration functionality with valid user data",
+      "test_steps": [
+        "Navigate to the registration page",
+        "Enter valid user data (name, age, email)",
+        "Submit the registration form"
+      ],
+      "expected_result": "User should be successfully registered and redirected to the home page",
+      "test_data": {
+        "name": "John Doe",
+        "age": 35,
+        "email": "johndoe@example.com"
+      },
+      "comments": "Ensure that the registered user data is correctly stored in the database"
+    },
+    "2": {
+      "id": 2,
+      "test_summary": "Verify login functionality with valid credentials",
+      "test_steps": [
+        "Navigate to the login page",
+        "Enter valid username and password",
+        "Click on the login button"
+      ],
+      "expected_result": "User should be successfully logged in and redirected to the dashboard",
+      "test_data": {
+        "username": "testuser",
+        "password": "test123"
+      },
+      "comments": "Ensure that the user's session is correctly maintained after login"
+    },
+    "3": {
+      "id": 3,
+      "test_summary": "Verify product search functionality with valid search query",
+      "test_steps": [
+        "Navigate to the search bar",
+        "Enter a valid search query (e.g., 'laptop')",
+        "Press Enter or click on the search button"
+      ],
+      "expected_result": "Search results page should display relevant products matching the search query",
+      "test_data": {
+        "search_query": "laptop"
+      },
+      "comments": "Ensure that the search functionality returns accurate and relevant results"
+    },
+    "4": {
+      "id": 4,
+      "test_summary": "Verify add to cart functionality for a specific product",
+      "test_steps": [
+        "Navigate to the product page",
+        "Click on the 'Add to Cart' button for the specific product",
+        "Navigate to the shopping cart page"
+      ],
+      "expected_result": "Selected product should be added to the shopping cart with the specified quantity",
+      "test_data": {
+        "product_id": "12345",
+        "quantity": 2
+      },
+      "comments": "Ensure that the correct product is added to the cart with the specified quantity"
+    },
+    "5": {
+      "id": 5,
+      "test_summary": "Verify checkout process with valid shipping and payment details",
+      "test_steps": [
+        "Proceed to checkout from the shopping cart page",
+        "Enter valid shipping address details",
+        "Select a valid payment method",
+        "Enter valid payment details",
+        "Review the order summary",
+        "Click on the 'Place Order' button"
+      ],
+      "expected_result": "Order should be successfully placed, and the user should be redirected to a confirmation page",
+      "test_data": {
+        "shipping_address": "123 Main St, Cityville",
+        "payment_method": "Credit Card",
+        "card_number": "1234 5678 9012 3456",
+        "expiration_date": "12/25",
+        "cvv": "123"
+      },
+      "comments": "Ensure that the checkout process flows smoothly and all entered data is correctly processed"
+    },
+"6": {
+      "id": 6,
+      "test_summary": "Verify checkout process with valid shipping and payment details",
+      "test_steps": [
+        "Proceed to checkout from the shopping cart page",
+        "Enter valid shipping address details",
+        "Select a valid payment method",
+        "Enter valid payment details",
+        "Review the order summary",
+        "Click on the 'Place Order' button"
+      ],
+      "expected_result": "Order should be successfully placed, and the user should be redirected to a confirmation page",
+      "test_data": {
+        "shipping_address": "123 Main St, Cityville",
+        "payment_method": "Credit Card",
+        "card_number": "1234 5678 9012 3456",
+        "expiration_date": "12/25",
+        "cvv": "123"
+      },
+      "comments": "Ensure that the checkout process flows smoothly and all entered data is correctly processed"
+    }
+  }
+  
